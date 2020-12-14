@@ -13,7 +13,6 @@ env:
 jobs:
   publish-artifacts:
     runs-on: ubuntu-latest
-    needs: [build-theme-lib]
     steps:
       - uses: actions/checkout@v2
       - name: Set up JDK 1.8
