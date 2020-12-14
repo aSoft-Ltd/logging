@@ -13,7 +13,6 @@ env:
 jobs:
   publish-artifacts:
     runs-on: ubuntu-latest
-    needs: [build-theme-lib]
     steps:
       - uses: actions/checkout@v2
       - name: Set up JDK 1.8
@@ -30,15 +29,15 @@ jobs:
       - name: Making gradlew executable
         run: chmod +x ./gradlew
         working-directory: .
-#      - name: Publishing theme-core
-#        run: ./gradlew :theme-core:publish
-#        working-directory: .
-#      - name: Publishing theme-css
-#        run: ./gradlew :theme-css:publish
-#        working-directory: .
-#      - name: Publishing theme-react
-#        run: ./gradlew :theme-react:publish
-#        working-directory: .
-#      - name: Closing and Releasing Repositories
-#        run: ./gradlew :theme-react:closeAndReleaseRepository
-#        working-directory: .
+      - name: Publishing logging-core
+        run: ./gradlew :logging-core:publish
+        working-directory: .
+      - name: Publishing logging-console
+        run: ./gradlew :logging-console:publish
+        working-directory: .
+      - name: Publishing logging-file
+        run: ./gradlew :logging-file:publish
+        working-directory: .
+      - name: Closing and Releasing Repositories
+        run: ./gradlew :logging-core:closeAndReleaseRepository
+        working-directory: .
