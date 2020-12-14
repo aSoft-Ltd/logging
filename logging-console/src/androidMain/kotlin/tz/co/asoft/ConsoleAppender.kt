@@ -13,7 +13,7 @@ actual class ConsoleAppender actual constructor(var options: ConsoleAppenderOpti
                 ERROR -> { tag, txt -> Log.e(tag, txt) }
                 FAILURE -> { tag, txt -> Log.wtf(tag, txt) }
             }
-            val src = data.toMap().getOrDefault("source", "Unkown").toString()
+            val src = data.toMap()["source"]?.toString() ?: "Unknown"
             printer(src, msg)
             if (options.verbose && data.isNotEmpty()) {
                 printer(src, "= = = = = = = = = = = = D = A = T = A = = = = = = = = = = = =")

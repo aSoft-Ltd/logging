@@ -18,3 +18,4 @@ pluginManagement {
 rootProject.name = "logging"
 include(":logging-core")
 include(":logging-console")
+include(":logging-file")

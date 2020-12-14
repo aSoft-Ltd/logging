@@ -1,26 +1,26 @@
 plugins {
-    id("com.android.library")
-    kotlin("multiplatform")
+    kotlin("jvm")
     id("tz.co.asoft.library")
     id("io.codearte.nexus-staging")
     signing
 }
 
-android {
-    defaultConfig {
-        minSdk = 8
-    }
+repositories {
+    maven(url = "https://kotlin.bintray.com/kotlinx/")
 }
 
+targetJava("1.8")
+
 kotlin {
-    universalLib()
     sourceSets {
-        val commonMain by getting {
+        val main by getting {
             dependencies {
                 api(project(":logging-core"))
+                api("org.jetbrains.kotlinx:kotlinx-datetime:${vers.kotlinx.datetime}")
             }
         }
-        val commonTest by getting {
+
+        val test by getting {
             dependencies {
                 api(asoft("test", vers.asoft.test))
             }
@@ -30,5 +30,5 @@ kotlin {
 
 aSoftLibrary(
     version = vers.asoft.logging,
-    description = "A multiplatfrom solution to logging on the console"
+    description = "A jvm solution to logging on to a file"
 )
