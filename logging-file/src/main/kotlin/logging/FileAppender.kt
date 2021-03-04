@@ -1,4 +1,4 @@
-package tz.co.asoft
+package logging
 
 import kotlinx.datetime.Clock
 import kotlinx.datetime.LocalDateTime

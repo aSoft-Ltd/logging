@@ -1,4 +1,4 @@
-package tz.co.asoft
+package logging
 
 class Logger(vararg appenders: Appender) : Appender {
     companion object {

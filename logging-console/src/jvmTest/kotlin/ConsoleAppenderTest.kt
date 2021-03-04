@@ -1,4 +1,4 @@
-import tz.co.asoft.*
+import logging.*
 import kotlin.test.Test
 
 class ConsoleAppenderTest {

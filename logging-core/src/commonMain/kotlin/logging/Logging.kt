@@ -1,4 +1,4 @@
-package tz.co.asoft
+package logging
 
 object Logging {
     internal val appenders = mutableListOf<Appender>()

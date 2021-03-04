@@ -1,17 +1,16 @@
-package tz.co.asoft
+package logging
 
 import android.util.Log
-import tz.co.asoft.LogLevel.*
 
 actual class ConsoleAppender actual constructor(var options: ConsoleAppenderOptions) : Appender {
     override fun append(level: LogLevel, msg: String, vararg data: Pair<String, Any?>) {
         if (level >= options.level) {
             val printer: (String, String) -> Unit = when (level) {
-                DEBUG -> { tag, txt -> Log.d(tag, txt) }
-                INFO -> { tag, txt -> Log.i(tag, txt) }
-                WARNING -> { tag, txt -> Log.w(tag, txt) }
-                ERROR -> { tag, txt -> Log.e(tag, txt) }
-                FAILURE -> { tag, txt -> Log.wtf(tag, txt) }
+                LogLevel.DEBUG -> { tag, txt -> Log.d(tag, txt) }
+                LogLevel.INFO -> { tag, txt -> Log.i(tag, txt) }
+                LogLevel.WARNING -> { tag, txt -> Log.w(tag, txt) }
+                LogLevel.ERROR -> { tag, txt -> Log.e(tag, txt) }
+                LogLevel.FAILURE -> { tag, txt -> Log.wtf(tag, txt) }
             }
             val src = data.toMap()["source"]?.toString() ?: "Unknown"
             printer(src, msg)

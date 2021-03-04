@@ -1,4 +1,4 @@
-package tz.co.asoft
+package logging
 
 enum class LogLevel {
     DEBUG, INFO, WARNING, ERROR, FAILURE
