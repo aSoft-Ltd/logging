@@ -1,4 +1,4 @@
-package tz.co.asoft
+package logging
 
 fun Appender.log(vararg o: Any?) = obj(*o)
 fun Appender.log(msg: String, vararg data: Pair<String, Any?>) = append(level = LogLevel.DEBUG, msg = msg, data = *data)

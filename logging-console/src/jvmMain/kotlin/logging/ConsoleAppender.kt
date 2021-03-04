@@ -1,4 +1,4 @@
-package tz.co.asoft
+package logging
 
 actual class ConsoleAppender actual constructor(var options: ConsoleAppenderOptions) : Appender {
     override fun append(level: LogLevel, msg: String, vararg data: Pair<String, Any?>) {
