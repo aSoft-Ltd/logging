@@ -1,4 +1,4 @@
-package tz.co.asoft
+package logging
 
 interface Appender {
     fun append(level: LogLevel, msg: String, vararg data: Pair<String, Any?>)

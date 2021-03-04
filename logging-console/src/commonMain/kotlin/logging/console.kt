@@ -1,3 +1,3 @@
-package tz.co.asoft
+package logging
 
 val console by lazy { ConsoleAppender() }

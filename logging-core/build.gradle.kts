@@ -1,5 +1,4 @@
 plugins {
-    id("com.android.library")
     kotlin("multiplatform")
     id("tz.co.asoft.library")
     id("io.codearte.nexus-staging")
@@ -7,10 +6,10 @@ plugins {
 }
 
 kotlin {
-    universalLib()
+    multiplatformLib()
 }
 
-aSoftLibrary(
+aSoftOSSLibrary(
     version = vers.asoft.logging,
-    description = "A multiplatfrom logging solution"
+    description = "A multiplatform logging solution"
 )

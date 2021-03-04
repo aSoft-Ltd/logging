@@ -6,8 +6,15 @@ plugins {
     signing
 }
 
+android {
+    configureAndroid("src/androidMain")
+    defaultConfig {
+        minSdk = 8
+    }
+}
+
 kotlin {
-    universalLib()
+    multiplatformLib(forAndroid = true)
     sourceSets {
         val commonMain by getting {
             dependencies {
@@ -16,13 +23,13 @@ kotlin {
         }
         val commonTest by getting {
             dependencies {
-                api(asoft("test",vers.asoft.test))
+                api(asoft("expect-core", vers.asoft.expect))
             }
         }
     }
 }
 
-aSoftLibrary(
+aSoftOSSLibrary(
     version = vers.asoft.logging,
-    description = "A multiplatfrom solution to logging on the console"
+    description = "A multiplatform solution to logging on the console"
 )

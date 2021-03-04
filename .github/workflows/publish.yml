@@ -29,15 +29,9 @@ jobs:
       - name: Making gradlew executable
         run: chmod +x ./gradlew
         working-directory: .
-#      - name: Publishing theme-core
-#        run: ./gradlew :theme-core:publish
-#        working-directory: .
-#      - name: Publishing theme-css
-#        run: ./gradlew :theme-css:publish
-#        working-directory: .
-#      - name: Publishing theme-react
-#        run: ./gradlew :theme-react:publish
-#        working-directory: .
-#      - name: Closing and Releasing Repositories
-#        run: ./gradlew :theme-react:closeAndReleaseRepository
-#        working-directory: .
+      - name: Publishing
+        run: ./gradlew publish
+        working-directory: .
+      - name: Publishing
+        run: ./gradlew :logging-core:closeAndReleaseRepository
+        working-directory: .

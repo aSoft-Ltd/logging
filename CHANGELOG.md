@@ -1,50 +1,27 @@
-# 0.0.4 : 2020.11.27
-## Bug fixes
-- Fixed not supporting IR backend
+# 0.0.20
 
-# 0.0.3 : 2020.11.26
-## Enhancements
-- Removed Iconography as it makes the syntax cumbersome
+- Updated gradle from `6.7.1` to `6.8.1`
+- Changed package name from `tz.co.asoft` to `logging`
+- Replaced dependency of test with expect
 
-# 0.0.2 : 2020.11.26
-## Bug Fixes
-- Marked ThemeProvider with @JsExport to allow proper DCE
+# 0.0.10
 
-## New Artifacts
-- Added `theme-css` supporting jvm and js
-
-## New Features
-- Added Iconography to theme
-
-## Dependencies
-- updated kotlin to version 1.4.20
-
-# 0.0.1
 ## Availability
+
 - Published to maven central
 
 ## Build Src
+
 - Updated to gradle version 6.7.1
 
 ## New Features
-### theme-core-metadata
-- Added `ColorPallet` class
-- Added `Theme<T>` class
 
-### theme-core-js
-- Added `TextStyle` class for any web framework
-- Added `Typograpgy` class for any web framework
-- Added `operator fun Color.invoke()` to make it easy convert to CSS colors
-
-### theme-react
-- Added `TextStyle`
-- Added `ReactTheme` type alias of `Theme<Typography>`
-- Added `ThemeContext`
-- Added `fun RBuilder.ThemeProvider(...)`
-- Added `fun RBuilder.ThemeConsumer(...)`
+- Initial release
 
 ## Documentation
+
 - Update readme
 
 ## Samples
+
 - Added samples
