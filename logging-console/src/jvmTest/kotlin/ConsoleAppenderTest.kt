@@ -1,12 +1,11 @@
 import logging.*
-import tz.co.asoft.*
 import kotlin.test.Test
 
 class ConsoleAppenderTest {
     @Test
     fun `api should look good`() {
-        logging.console.info("Testing again", "first" to 1, "second" to 2)
-        logging.console.error("This is a test error", "correct" to false)
+        console.info("Testing again", "first" to 1, "second" to 2)
+        console.error("This is a test error", "correct" to false)
     }
 
     @Test
