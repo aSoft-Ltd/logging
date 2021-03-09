@@ -1,3 +1,6 @@
+# 0.0.21
+- Adding ios, macos, watchos and tvos targets
+
 # 0.0.20
 
 - Updated gradle from `6.7.1` to `6.8.1`
