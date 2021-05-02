@@ -1,4 +1,9 @@
+# 0.0.30: 2021.05.02
+
+- Kotlin 1.5.0 support
+
 # 0.0.21
+
 - Adding ios, macos, watchos and tvos targets
 
 # 0.0.20
