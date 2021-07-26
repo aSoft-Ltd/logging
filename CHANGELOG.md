@@ -1,3 +1,9 @@
+# 0.0.31: 2021.07.26
+- Updated from kotlin 1.5.0 to 1.5.21
+- Updated expect from 0.0.30 to 0.0.40
+- Updated builders from 1.3.30 to 1.3.40
+- updated datetime from 0.2.0 to 0.2.1
+
 # 0.0.30: 2021.05.02
 
 - Kotlin 1.5.0 support
