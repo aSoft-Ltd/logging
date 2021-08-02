@@ -32,5 +32,5 @@ jobs:
         run: chmod +x ./gradlew
         working-directory: .
       - name: Building project
-        run: ./gradlew build
+        run: ./gradlew cleanAllTests allTests
         working-directory: .
