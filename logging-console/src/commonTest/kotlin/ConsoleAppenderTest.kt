@@ -1,15 +1,16 @@
 import logging.*
+import kotlin.js.JsName
 import kotlin.test.Test
 
 class ConsoleAppenderTest {
     @Test
-    fun `api should look good`() {
+    fun api_should_look_good() {
         console.info("Testing again", "first" to 1, "second" to 2)
         console.error("This is a test error", "correct" to false)
     }
 
     @Test
-    fun `should be able to take the logger of test class`() {
+    fun should_be_able_to_take_the_logger_of_test_class() {
         val logger = logger()
         logger.debug("Debug test")
         logger.info("Info test")
@@ -19,7 +20,7 @@ class ConsoleAppenderTest {
     }
 
     @Test
-    fun `should print less verbose errors`() {
+    fun should_print_less_verbose_errors() {
         val logger = ConsoleAppender(verbose = false)
         logger.debug("Debug test")
         logger.info("Info test")
@@ -29,7 +30,7 @@ class ConsoleAppenderTest {
     }
 
     @Test
-    fun `should print by levels`() {
+    fun should_print_by_levels() {
         val logger = ConsoleAppender(level = LogLevel.ERROR)
         logger.debug("Debug test")
         logger.info("Info test")
