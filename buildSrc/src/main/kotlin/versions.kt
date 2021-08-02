@@ -7,7 +7,7 @@ object vers {
     }
 
     object asoft {
-        val logging = "0.0.32"
+        val logging = "0.0.33"
         val builders = "1.3.42"
         val expect = "0.0.41"
     }
