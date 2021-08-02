@@ -8,7 +8,7 @@ A kotlin multiplatform solution to logging
 
 ```kotlin
 dependencies {
-    implementation("tz.co.asoft:logging-console:0.0.32")
+    implementation("tz.co.asoft:logging-console:0.0.33")
 }
 ```
 
@@ -25,7 +25,7 @@ logger.error("Test Error")
 logger.failure("Test Failure")
 ```
 
-[badge-maven]: https://img.shields.io/maven-central/v/tz.co.asoft/logging-core/0.0.32?style=flat
+[badge-maven]: https://img.shields.io/maven-central/v/tz.co.asoft/logging-core/0.0.33?style=flat
 
 [badge-mpp]: https://img.shields.io/badge/kotlin-multiplatform-blue?style=flat
 
