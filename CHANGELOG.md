@@ -1,3 +1,8 @@
+# 0.0.32: 2021.08.02
+- Reverted from kotlin 1.5.21 to 1.5.10
+- Updated to expect from 0.0.40 to 0.0.41
+- Updated builders from 1.3.30 to 1.3.42
+
 # 0.0.31: 2021.07.26
 - Updated from kotlin 1.5.0 to 1.5.21
 - Updated expect from 0.0.30 to 0.0.40
