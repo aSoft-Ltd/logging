@@ -6,8 +6,8 @@ actual class ConsoleAppender actual constructor(var options: ConsoleAppenderOpti
             if (options.verbose) {
                 println("\n" + "= ".repeat(31))
                 println("${level.name}: $msg")
-                data.forEach {
-                    println("${it.first}: ${it.second}")
+                for ((key, value) in data) {
+                    println("$key: $value")
                 }
                 println("= ".repeat(31))
             } else {
